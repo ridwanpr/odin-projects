@@ -70,7 +70,7 @@ function changeGrid() {
   const gridSize = prompt("Enter the number of box per row", 16);
   if (isNaN(gridSize)) {
     alert("Only number allowed");
-    window.location.reload();
+    return;
   }
 
   if (gridSize != null) {
