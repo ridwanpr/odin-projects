@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 800px;
+}
+
+.grid-row {
+  display: flex;
+  width: 100%;
+}
+
+.grid {
+  flex: 1;
+  aspect-ratio: 1/1;
+  border: 1px solid #333;
+}
+
+/*  Small phones (320px - 480px) */
+@media only screen and (max-width: 480px) {
+  #app {
+    width: 100%;
+  }
+}
+
+button {
+  padding: 5px 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.color-preview {
+  height: 25x;
+  width: 30px;
+  background-color: lightblue;
+}

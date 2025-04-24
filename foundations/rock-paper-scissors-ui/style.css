@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 14px 8px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+#scores {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.player-score-wrapper {
+  text-align: center;
+}
+
+.computer-score-wrapper {
+  text-align: center;
+}
+
+#choices {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#choosen-choice p {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+#choosen-choice div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#choosen-choice div p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.restart {
+  padding: 7px 14px;
+  background-color: lightcoral;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.restart:hover {
+  cursor: pointer;
+  background-color: rgb(223, 105, 105);
+}
+
+.none {
+  display: none !important;
+}
