@@ -1,0 +1,48 @@
+<!-- Let arr be an array.
+
+Create a function unique(arr) that should return an array with unique items of arr.
+
+For instance: -->
+<!-- 
+function unique(arr) {
+  /* your code */
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(strings) ); // Hare, Krishna, :-O -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Info 7</title>
+</head>
+
+<body>
+    <script>
+        function unique(arr) {
+            let results = [];
+
+            for (let i = 0; i < arr.length; i++) {
+                if (!results.includes(arr[i])) {
+                    results.push(arr[i]);
+                }
+            }
+
+            return results;
+        }
+
+        let strings = ["Hare", "Krishna", "Hare", "Krishna",
+            "Krishna", "Krishna", "Hare", "Hare", ":-O"
+        ];
+
+        alert(unique(strings));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!-- Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.
+
+That is: removes all dashes, each word after dash becomes uppercased.
+
+Examples:
+
+camelize("background-color") == 'backgroundColor';
+camelize("list-style-image") == 'listStyleImage';
+camelize("-webkit-transition") == 'WebkitTransition';
+
+P.S. Hint: use split to split the string into an array, transform it and join back. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Info</title>
+</head>
+
+<body>
+  <script>
+    const camelize = (str) => {
+      const splitStr = str.split("-");
+
+      const capitalize = splitStr
+        .map((val, i) => {
+          if (val === "" || i == 0) {
+            return val;
+          }
+
+          return val[0].toUpperCase() + val.slice(1);
+        })
+        .join("");
+
+      return capitalize;
+    };
+
+    console.log(camelize("background-color"));
+    console.log(camelize("-webkit-transition"));
+  </script>
+</body>
+
+</html>

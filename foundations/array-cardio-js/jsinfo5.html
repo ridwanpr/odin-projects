@@ -1,0 +1,46 @@
+<!-- We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified.
+
+Create a function copySorted(arr) that returns such a copy.
+
+let arr = ["HTML", "JavaScript", "CSS"];
+
+let sorted = copySorted(arr);
+
+alert( sorted ); // CSS, HTML, JavaScript
+alert( arr ); // HTML, JavaScript, CSS (no changes) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Info 5</title>
+</head>
+
+<body>
+    <script>
+        const copySorted = (arr) => {
+            const copied = [...arr];
+            const sorted = copied.sort((a, b) => {
+                if (a > b) {
+                    return 1;
+                } else if (a < b) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            });
+
+            return sorted;
+        }
+
+        let arr = ["HTML", "JavaScript", "CSS"];
+        let sorted = copySorted(arr);
+
+        console.log(sorted);
+        console.log(arr);
+    </script>
+</body>
+
+</html>
