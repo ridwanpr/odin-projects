@@ -16,7 +16,17 @@
             Pete: 130
         }
 
-        
+        const sumSalaries = (salaries) => {
+            let sum = 0;
+            for (let key in salaries) {
+                sum += salaries[key];
+            }
+
+            return sum;
+        }
+
+        const sum = sumSalaries(salaries);
+        alert(sum);
     </script>
 </body>
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply Numeric Values by 2</title>
+</head>
+
+<body>
+    <script>
+        const multiplyNumeric = (menu) => {
+            for (let key in menu) {
+                if (typeof menu[key] === "number") {
+                    menu[key] = menu[key] * 2;
+                }
+            }
+        };
+
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+
+        multiplyNumeric(menu);
+
+        console.log(menu);
+    </script>
+</body>
+
+</html>
